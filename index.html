@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will You Be My Valentine?</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Background Hearts -->
+    <div id="bg-hearts"></div>
+
+    <!-- Hidden Audio Element -->
+    <audio id="loveSound" src="love-sound.mp3" preload="auto"></audio>
+    <!-- 
+     INSTRUCTION: 
+     Replace "love-sound.mp3" with your own audio file (e.g., a romantic song, heart beat, or celebration sound).
+     Place the audio file in the same folder as this HTML file.
+     Supported formats: MP3, WAV, OGG, etc.
+  -->
+
+    <div class="card">
+      <!-- Question Screen -->
+      <div id="proposalContent">
+        <div style="font-size: 50px; margin-bottom: 10px">💌</div>
+        <h1>Sanjita...</h1>
+        <p class="subtitle">I have something special to ask you.</p>
+        <h1>Will you be my Valentine?</h1>
+
+        <div class="button-container">
+          <button id="yesBtn">Yes! ❤️</button>
+          <button id="noBtn">No 😢</button>
+        </div>
+      </div>
+
+      <!-- Success Screen with Gallery -->
+      <div id="loveContent" class="love-content hidden">
+        <h1>Yay! I Love You! ❤️</h1>
+        <p class="subtitle" style="margin-top: 10px">
+          You are my today, my tomorrow, and every heartbeat in between. With
+          you, even ordinary moments become unforgettable memories. Here are
+          some pieces of my heart, captured in moments with you. ❤️
+        </p>
+
+        <!-- 
+         INSTRUCTION: 
+         Put your photos in the same folder as this file.
+         Name them: photo1.jpg, photo2.jpg, photo3.jpg, photo4.jpg
+      -->
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="photo1.jpeg" alt="Memory 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="photo2.jpeg" alt="Memory 2" />
+          </div>
+          <div class="gallery-item">
+            <img src="photo3.jpeg" alt="Memory 3" />
+          </div>
+          <div class="gallery-item">
+            <img src="photo4.jpeg" alt="Memory 4" />
+          </div>
+           <div class="gallery-item">
+            <img src="photo5.jpeg" alt="Memory 4" />
+          </div>
+          <div class="gallery-item">
+            <img src="photo6.jpeg" alt="Memory 4" />
+          </div>
+        </div>
+
+        <button
+          onclick="location.reload()"
+          style="margin-top: 25px; font-size: 16px; padding: 10px 30px"
+        >
+          Replay ↺
+        </button>
+      </div>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
